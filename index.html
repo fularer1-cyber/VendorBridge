@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VendorBridge | Supplier & Procurement Management System</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="VendorBridge Logo">
+    <span>VendorBridge</span>
+        </a>
+
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center" style="min-height: 100vh;">
+
+            <div class="col-lg-6 mx-auto text-center text-white">
+
+                <h1 class="display-3 fw-bold">
+                    VendorBridge
+                </h1>
+
+                <p class="lead mt-4"> VendorBridge is a modern Supplier & Procurement Management System designed to simplify supplier management, quotations, purchase orders, inventory tracking and procurement reporting through a secure, fast and user-friendly platform.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#" class="btn btn-primary btn-lg me-3">
+                        Get Started
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Statistics -->
+
+<section id="statistics" class="container py-5">
+
+<h2 class="text-center fw-bold text-primary mb-5">
+VendorBridge Statistics
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<div class="card shadow border-0 p-4">
+
+<i class="fa-solid fa-truck fa-3x text-primary mb-3"></i>
+
+<h2 class="fw-bold text-primary">
+550+
+</h2>
+
+<p class="fw-semibold mb-1">Trusted Suppliers</p>
+<small class="text-muted">Verified Vendor Network</small>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0 p-4">
+
+<i class="fa-solid fa-file-invoice fa-3x text-warning mb-3"></i>
+
+<h2 class="fw-bold text-warning">
+850+
+</h2>
+
+<p class="fw-semibold mb-1">Quotations Processed</p>
+<small class="text-muted">Fast & Accurate Quotes</small>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0 p-4">
+
+<i class="fa-solid fa-cart-shopping fa-3x text-success mb-3"></i>
+
+<h2 class="fw-bold text-success">
+1200+
+</h2>
+
+<p class="fw-semibold mb-1">Purchase Orders</p>
+<small class="text-muted">Successfully Managed</small>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0 p-4">
+
+<i class="fa-solid fa-building fa-3x text-danger mb-3"></i>
+
+<h2 class="fw-bold text-danger">
+100+
+</h2>
+
+<p class="fw-semibold mb-1">Business Partners</p>
+<small class="text-muted">Growing Every Year</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-6">
+            <img src="{{ url_for('static',filename='about.jpg')}}"
+                 class="img-fluid rounded shadow"
+                 alt="About VendorBridge">
+        </div>
+
+        <div class="col-lg-6">
+
+            <h2 class="fw-bold text-primary mb-4">
+                About VendorBridge
+            </h2>
+
+
+         <p class="text-muted">
+VendorBridge is a modern and user-friendly Supplier & Procurement Management System developed to simplify procurement activities for businesses. It helps organizations efficiently manage suppliers, quotations, purchase orders, inventory records, and procurement reports through a single platform.
+</p>
+
+<p class="text-muted">
+Our goal is to improve business productivity, reduce manual paperwork, and provide a fast, secure, and reliable procurement management solution for organizations of all sizes.
+</p>
+
+<div class="row mt-4">
+
+    <div class="col-6">
+        <p><i class="fa-solid fa-check text-success"></i> Supplier Management</p>
+        <p><i class="fa-solid fa-check text-success"></i> Quotation Tracking</p>
+        <p><i class="fa-solid fa-check text-success"></i> Purchase Orders</p>
+    </div>
+
+    <div class="col-6">
+        <p><i class="fa-solid fa-check text-success"></i> Reports & Analytics</p>
+        <p><i class="fa-solid fa-check text-success"></i> Secure Database</p>
+        <p><i class="fa-solid fa-check text-success"></i> Easy Dashboard</p>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Features Section -->
+
+<section id="features" class="container py-5">
+
+<h2 class="text-center fw-bold text-primary mb-5">
+Our Features
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow h-100 text-center border-0 p-4">
+
+<i class="fa-solid fa-box fa-3x text-primary mb-3"></i>
+
+<h4>Supplier Management</h4>
+
+<p class="text-muted">
+Manage supplier details quickly and efficiently.
+</p>
+
+<a href="#" class="btn btn-outline-primary">
+Read More
+</a>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow h-100 text-center border-0 p-4">
+
+<i class="fa-solid fa-file-lines fa-3x text-warning mb-3"></i>
+
+<h4>Quotation Management</h4>
+
+<p class="text-muted">
+Create and track supplier quotations easily.
+</p>
+
+<a href="#" class="btn btn-outline-warning">
+Read More
+</a>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow h-100 text-center border-0 p-4">
+
+<i class="fa-solid fa-cart-shopping fa-3x text-success mb-3"></i>
+
+<h4>Purchase Orders</h4>
+
+<p class="text-muted">
+Track purchase orders and procurement records.
+</p>
+
+<a href="#" class="btn btn-outline-success">
+Read More
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="row g-4 mt-2">
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 text-center border-0 p-4">
+            <i class="fa-solid fa-chart-line fa-3x text-danger mb-3"></i>
+            <h4>Reports</h4>
+            <p class="text-muted">
+                Generate procurement reports with a single click.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 text-center border-0 p-4">
+            <i class="fa-solid fa-database fa-3x text-info mb-3"></i>
+            <h4>Database</h4>
+            <p class="text-muted">
+                Store supplier and order information securely.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100 text-center border-0 p-4">
+            <i class="fa-solid fa-chart-pie fa-3x text-success mb-3"></i>
+            <h4>Analytics</h4>
+            <p class="text-muted">
+                Analyze procurement performance with smart insights.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+
+<!-- Client Testimonials -->
+<section class="container py-5 bg-light rounded-4">
+
+    <h2 class="text-center fw-bold text-primary mb-5">
+    Client Testimonials
+    </h2>
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 p-4 h-100 text-center">
+                <i class="fa-solid fa-user-circle fa-4x text-primary mb-3"></i>
+                <h5> Bharat Enterprises </h5>
+                <p>"VendorBridge has simplified our procurement process and improved supplier management."</p>
+                <small class="text-warning">★★★★★</small>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 p-4 h-100 text-center">
+                <i class="fa-solid fa-user-circle fa-4x text-success mb-3"></i>
+                <h5> Maharashtra Industries </h5>
+                <p>"The quotation and purchase order modules save us a lot of time."</p>
+                <small class="text-warning">★★★★★</small>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 p-4 h-100 text-center">
+                <i class="fa-solid fa-user-circle fa-4x text-danger mb-3"></i>
+                <h5> Apex Solutions </h5>
+                <p>"A simple, responsive and user-friendly procurement management system."</p>
+                <small class="text-warning">★★★★★</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="container py-5">
+
+    <h2 class="text-center fw-bold text-primary mb-5">
+    Frequently Asked Questions
+    </h2>
+
+    <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                    What is VendorBridge?
+                </button>
+            </h2>
+
+            <div id="faq1"
+                 class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    VendorBridge is a Supplier and Procurement Management System that manages suppliers, quotations, purchase orders and reports.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                    Is VendorBridge responsive?
+                </button>
+            </h2>
+
+            <div id="faq2"
+                 class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Yes. It is fully responsive and works on desktop, tablet and mobile devices.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                    Can I manage suppliers?
+                </button>
+            </h2>
+
+            <div id="faq3"
+                 class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Yes. You can add, edit, update and manage supplier information easily.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+
+    <h2 class="text-center fw-bold text-primary mb-4">
+    Contact Us
+    </h2>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <div class="card shadow-lg border-0 rounded-4 p-4">
+
+                <form action="/contact" method="post" enctype="multipart/form-data">
+
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label class="form-label"> Enter Full Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email Address" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+
+                        <select name="subject" class="form-select" required>
+
+                            <option value="">Select Subject</option>
+                            <option>New Supplier Registration</option>
+                            <option>Quotation Request</option>
+                            <option>Purchase Order</option>
+                            <option>Payment Inquiry</option>
+                            <option>Technical Support</option>
+                            <option>Report Issue</option>
+                            <option>General Inquiry</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="mb-3">
+                        <label class="form-label">Company Name</label>
+
+                        <input type="text"
+                               name="company"
+                               class="form-control"
+                               placeholder="Enter Company Name"
+                               required>
+                    </div>
+
+                    <!-- Requirement Date -->
+                    <div class="mb-3">
+                        <label class="form-label">Requirement Date</label>
+
+                        <input type="date"
+                               name="requirement_date"
+                               class="form-control"
+                               required>
+                    </div>
+
+                    <!-- Upload -->
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Upload Quotation / Document
+                        </label>
+
+                        <input type="file"
+                               name="document"
+                               class="form-control"
+                               accept=".pdf,.doc,.docx,.jpg,.png">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+
+                        <textarea name="message"
+                                  class="form-control"
+                                  rows="5"
+                                  placeholder="Write Your Message"
+                                  required></textarea>
+                    </div>
+
+                    <!-- Buttons -->
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                    <button type="reset" class="btn btn-secondary ms-2">
+                        Reset
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Footer -->
+<footer id="footer" class="text-white pt-5 pb-3">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Company -->
+            <div class="col-md-4 mb-4">
+                <h3 class="fw-bold text-warning">VendorBridge</h3>
+
+                <p class="text-light">
+                    VendorBridge is a modern Supplier & Procurement Management System that helps businesses manage suppliers, quotations, purchase orders, and reports efficiently.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">Quick Links</h4>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+
+                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+
+                    <li><a href="#features" class="text-white text-decoration-none">Features</a></li>
+
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+
+                <h4 class="fw-bold">Contact Info</h4>
+
+                <p><i class="fa-solid fa-location-dot text-warning"></i> Ratnagiri, Maharashtra</p>
+
+                <p><i class="fa-solid fa-phone text-warning"></i> +91 7620903911</p>
+
+                <p><i class="fa-solid fa-envelope text-warning"></i> vendorbridge@gmail.com</p>
+
+                <div class="mt-3">
+
+                    <a href="#" class="text-white me-3">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+
+                    <a href="#" class="text-white me-3">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+
+                    <a href="#" class="text-white me-3">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+
+                    <a href="#" class="text-white">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="border-secondary">
+
+        <p class="text-center mb-0">
+            © 2026 VendorBridge | All Rights Reserved | Designed by Rajesh Fulare
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
